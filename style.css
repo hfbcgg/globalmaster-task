@@ -1,0 +1,149 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+}
+
+h1, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bannerheader {
+  background: url('bg.png') no-repeat center center/cover;
+  height: 400px;
+  width: 95%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bannerovr {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.bannercnt {
+  position: relative;
+  z-index: 1;
+}
+
+.bannercnt h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.bannercnt p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.button {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.catsection {
+  padding: 40px 20px;
+  background-color: white;
+  text-align: center;
+}
+
+.catheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  width: 99%;
+}
+
+.left {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 1%;
+}
+
+.left span {
+  margin-right: 10px;
+}
+
+.findbycategory {
+  color: #007bff;
+  font-weight: 600;
+}
+
+.viewall {
+  font-size: 0.6em;
+  color: #007bff;
+  font-weight: 600;
+}
+
+.cattiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tile {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+}
+
+.tile img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.tile p {
+  margin-top: 15px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+
+@media (max-width: 768px) {
+  .bannerheader {
+      height: 300px;
+  }
+
+  .bannercnt h1 {
+      font-size: 2rem;
+  }
+
+  .bannercnt p {
+      font-size: 1rem;
+  }
+}
